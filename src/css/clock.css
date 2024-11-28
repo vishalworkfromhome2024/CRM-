@@ -1,0 +1,211 @@
+/*  .App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.atp-clock-btn {
+  display: none !important;
+}
+
+.button {
+  background-color: black;
+  border: none;
+  color: white;
+  margin-top: 13px;
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.mat-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.atp {
+  box-shadow: none !important;
+}
+
+
+.atp-time {
+  background: linear-gradient(to right, #9c27b0, #64b5f6) !important;  
+  text-align: center !important;
+  font-size: 35px;
+}
+
+.atp-color--primary {
+  background-color: #1890ff;
+}
+
+.atp-clock-cnt {
+  background-color: black !important;
+  border-radius: 50%;
+}
+
+.atp-clock {
+  background-color: black !important;
+  border-radius: 50%;
+}
+
+.atp-face-color {
+  background-color: black !important;
+}
+
+.atp-n {
+  color: white !important;
+}
+
+.atp-h {
+  background-color: #1890ff !important;
+}
+
+@media (max-width: 576px) {
+.atp-am, .atp-pm {
+  
+  font-size: 40% !important;
+
+}
+ 
+.atp-time .atp-hour, .atp-time .atp-minute {
+   font-size: 80% !important;
+}
+
+.atp-time {
+  font-size: 22px !important;
+}
+
+.element.style {
+  width: 200px !important;
+  font-size: 12px !important;
+}
+
+} */
+ 
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.atp-clock-btn {
+  display: none !important;
+}
+
+.button {
+  background-color: black;
+  border: none;
+  color: white;
+  margin-top: 13px;
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.mat-card {
+  display: flex;
+  justify-content: center; /* Center buttons horizontally */
+  gap: 10px; /* Space between buttons */
+  margin-top: 10px; /* Spacing between clock and buttons */
+}
+
+.atp {
+  box-shadow: none !important;
+}
+
+.atp-time {
+  background: linear-gradient(to right, #9c27b0, #64b5f6) !important;
+  text-align: center !important;
+  font-size: 35px;
+}
+
+.atp-color--primary {
+  background-color: #1890ff;
+}
+
+.atp-clock-cnt {
+  background:linear-gradient(to right, #64b5f6, #9c27b0)  !important;
+  border-radius: 50%;
+}
+
+.atp-clock {
+  background: linear-gradient(to right, #64b5f6, #9c27b0) !important;
+  border-radius: 50%;
+}
+
+.atp-face-color {
+  background: linear-gradient(to right, #64b5f6, #9c27b0)  !important;
+}
+
+.atp-n {
+  color: white !important;
+}
+
+.atp-h {
+  background-color: #fff !important;
+}
+
+ .atp-time {
+  background-color: #fff !important;
+ }
+
+
+/* Media query for small devices (max-width: 576px) */
+@media (max-width: 576px) {
+  .atp-am, .atp-pm {
+    font-size: 40% !important;
+    color: #000;
+  }
+
+
+  .atp-time .atp-hour, .atp-time .atp-minute {
+    font-size: 80% !important;
+    color: #000;
+  }
+
+  .atp-time {
+    font-size: 18px !important;
+
+  }
+
+  .mat-card {
+    flex-direction: row; /* Ensures buttons are in a row side by side */
+    align-items: center; /* Vertically center buttons */
+  }
+
+  /* Styling for the Set and Clear buttons */
+  .mat-card .setclearbutton {
+    width: 80px !important;  /* Adjust width of Set and Clear button */
+    height: 40px !important; /* Adjust height of Set and Clear button */
+    font-size: 14px !important; /* Optional: Adjust font size */
+    padding: 0 !important;  /* Remove padding */
+    margin: 30px 4px!important; /* Ensure spacing between buttons */
+    background: linear-gradient(to right, #9c27b0, #64b5f6) !important; /* Gradient background */
+    border-radius: 5px; /* Rounded corners */
+    color: white !important; /* Text color */
+    border: none !important; /* Remove any default border */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-transform: uppercase; /* Make text uppercase */
+    transition: background 0.3s ease; /* Smooth transition on hover */
+  }
+
+  /* Hover effect for buttons */
+  .mat-card .setclearbutton:hover {
+    background: linear-gradient(to right, #64b5f6, #9c27b0) !important; /* Reverse gradient on hover */
+  }
+
+  /* Ensure clock is centered horizontally on small devices */
+  #clock {
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px !important;  /* Set clock size for smaller screens */
+    height: 150px !important; /* Set clock size for smaller screens */
+  }
+
+  /* Remove extra widths or flex constraints to ensure proper layout */
+}
